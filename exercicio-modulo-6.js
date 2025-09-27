@@ -113,11 +113,29 @@ Crie uma variável senha. Se tiver menos de
 Se tiver 6 ou mais, mostre "Senha válida".
 */
 
+const senha = 'testet'
+if(senha.length < 6){
+    console.log('Senha muito curta')
+}else{
+    console.log('Senha válida')
+}
+
 /* 9. Compra com saldo
 Crie duas variáveis: saldoDisponivel e 
 valorCompra. Se o saldo for suficiente,
 mostre "Compra aprovada". Caso contrário, "Saldo insuficiente".
 */
+
+const saldoDisponivel = 1000
+const valorCompra = 1000
+
+if(saldoDisponivel - valorCompra >= 0){
+    console.log('Compra aprovada')
+}else{
+    console.log('Saldo insuficiente')
+}
+
+
 
 /* 
 10. Validação de formulário completo
@@ -126,3 +144,13 @@ Mostre "Formulário enviado com sucesso"
 apenas se todos os campos estiverem preenchidos e a 
 idade for maior que 0.
 */
+
+const nomeFormulario = 'caio'
+const emailFormulario = 'caio@amaro'
+const idadeFormulario = 3
+
+if(nomeFormulario && emailFormulario && idadeFormulario > 0){
+    console.log('Formulário Enviado com sucesso')
+}else{
+    console.log('Envio deu errado!')
+}
